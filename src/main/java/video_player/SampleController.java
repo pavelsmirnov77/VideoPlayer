@@ -29,8 +29,6 @@ public class SampleController implements Initializable {
     @FXML
     private MediaView mediaView;
     @FXML
-    private String filePath;
-    @FXML
     private Slider slider;
     @FXML
     private Slider seekSlider;
@@ -41,7 +39,7 @@ public class SampleController implements Initializable {
         FileChooser.ExtensionFilter filter = new FileChooser.ExtensionFilter("Select a file (*.mp4)", "*.mp4");
         fileChooser.getExtensionFilters().add(filter);
         File file = fileChooser.showOpenDialog(null);
-        filePath = file.toURI().toString();
+        String filePath = file.toURI().toString();
 
         if (filePath != null) {
             Media media = new Media(filePath);
