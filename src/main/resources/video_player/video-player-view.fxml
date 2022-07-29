@@ -16,14 +16,14 @@
          <children>
             <HBox alignment="CENTER" prefHeight="40.0" prefWidth="600.0">
                <children>
-                  <Button fx:id="openFileButton" mnemonicParsing="false" onAction="#openFile" text="Open file" />
-                  <Button fx:id="pauseButton" mnemonicParsing="false" onAction="#pause" text="Pause" />
-                  <Button fx:id="playBtn" mnemonicParsing="false" onAction="#play" text="Play" />
-                  <Button mnemonicParsing="false" onAction="#slower" text="x0.5" />
+                  <Button mnemonicParsing="false" onAction="#openFile" text="Open file" />
+                  <Button mnemonicParsing="false" onAction="#pause" text="Pause" />
+                  <Button mnemonicParsing="false" onAction="#play" prefWidth="47.2" text="Play" />
+                  <Button mnemonicParsing="false" onAction="#slower" prefWidth="44.0" text="x0.5" />
                   <Button mnemonicParsing="false" onAction="#slow" text="x0.75" />
-                  <Button mnemonicParsing="false" onAction="#fast" text="x1.5" />
-                  <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#faster" text="x2" />
-                  <Button mnemonicParsing="false" onAction="#exit" text="Exit" />
+                  <Button mnemonicParsing="false" onAction="#fast" prefWidth="44.0" text="x1.5" />
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#faster" prefWidth="44.0" text="x2" />
+                  <Button mnemonicParsing="false" onAction="#exit" prefWidth="44.0" text="Exit" />
                   <Slider fx:id="slider">
                      <HBox.margin>
                         <Insets left="10.0" />
