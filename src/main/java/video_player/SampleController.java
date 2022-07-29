@@ -28,15 +28,12 @@ public class SampleController implements Initializable {
     private MediaPlayer mediaPlayer;
     @FXML
     private MediaView mediaView;
+    @FXML
     private String filePath;
     @FXML
     private Slider slider;
     @FXML
     private Slider seekSlider;
-    @FXML
-    void exit(ActionEvent event) {
-
-    }
 
     @FXML
     private void openFile(ActionEvent event) {
@@ -89,6 +86,7 @@ public class SampleController implements Initializable {
     @FXML
     void play(ActionEvent event) {
         mediaPlayer.play();
+        mediaPlayer.setRate(1);
     }
 
     @FXML
@@ -109,6 +107,11 @@ public class SampleController implements Initializable {
     @FXML
     void faster(ActionEvent event) {
         mediaPlayer.setRate(2);
+    }
+
+    @FXML
+    void exit(ActionEvent event) {
+        System.exit(0);
     }
 
     @Override
